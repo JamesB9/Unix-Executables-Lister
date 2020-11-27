@@ -127,6 +127,33 @@ OS3_Coursework\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS3_Coursework.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OS3_Coursework.dir\build
 .PHONY : OS3_Coursework\fast
 
+StringList\StringList.obj: StringList\StringList.c.obj
+
+.PHONY : StringList\StringList.obj
+
+# target to build an object file
+StringList\StringList.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS3_Coursework.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OS3_Coursework.dir\StringList\StringList.c.obj
+.PHONY : StringList\StringList.c.obj
+
+StringList\StringList.i: StringList\StringList.c.i
+
+.PHONY : StringList\StringList.i
+
+# target to preprocess a source file
+StringList\StringList.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS3_Coursework.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OS3_Coursework.dir\StringList\StringList.c.i
+.PHONY : StringList\StringList.c.i
+
+StringList\StringList.s: StringList\StringList.c.s
+
+.PHONY : StringList\StringList.s
+
+# target to generate assembly for a file
+StringList\StringList.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS3_Coursework.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OS3_Coursework.dir\StringList\StringList.c.s
+.PHONY : StringList\StringList.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -163,6 +190,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... OS3_Coursework
+	@echo ... StringList/StringList.obj
+	@echo ... StringList/StringList.i
+	@echo ... StringList/StringList.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "C:/Users/JamesBurling/Documents/GitHub/OS3-Coursework/StringList/StringList.c" "C:/Users/JamesBurling/Documents/GitHub/OS3-Coursework/cmake-build-debug/CMakeFiles/OS3_Coursework.dir/StringList/StringList.c.obj"
   "C:/Users/JamesBurling/Documents/GitHub/OS3-Coursework/main.c" "C:/Users/JamesBurling/Documents/GitHub/OS3-Coursework/cmake-build-debug/CMakeFiles/OS3_Coursework.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "MSVC")

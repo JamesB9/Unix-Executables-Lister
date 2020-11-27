@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/OS3_Coursework.dir/StringList/StringList.c.obj"
   "CMakeFiles/OS3_Coursework.dir/main.c.obj"
   "OS3_Coursework.exe"
   "OS3_Coursework.exe.manifest"

@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/JamesBurling/Documents/GitHub/OS3-Coursework/StringList/StringList.c">
+			<Option target="OS3_Coursework"/>
+		</Unit>
+		<Unit filename="C:/Users/JamesBurling/Documents/GitHub/OS3-Coursework/StringList/StringList.h">
+			<Option target="OS3_Coursework"/>
+		</Unit>
 		<Unit filename="C:/Users/JamesBurling/Documents/GitHub/OS3-Coursework/main.c">
 			<Option target="OS3_Coursework"/>
 		</Unit>
