@@ -34,10 +34,11 @@ void listExecutables(StringList* directories){
             int fileCounter = 0;
             while ((dirEntry = readdir(dir)) != NULL){
                 // Get Full FIle Path
-                char* filePath = malloc(256*sizeof(char));
-                strcat(filePath, get(directories, i));
-                strcat(filePath, "/");
-                strcat(filePath, dirEntry->d_name);
+                char filePath[256];
+                snprintf(filePath,256,"%s/%s", get(directories, i), dirEntry->d_name);
+                //strcat(filePath, get(directories, i));
+               // strcat(filePath, "/");
+                //strcat(filePath, dirEntry->d_name);
 
                 if(isExecutableFile(filePath)){
                     printf("%s\n", filePath);
