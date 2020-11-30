@@ -37,7 +37,6 @@ StringList* splitString(char* string, char delimiter){
     StringList* stringList = initStringList();
 
     char* dir = strtok(string, &delimiter);
-
     while(dir != NULL){
         add(stringList, dir);
         dir = strtok(NULL, &delimiter);
@@ -47,11 +46,8 @@ StringList* splitString(char* string, char delimiter){
 }
 
 void freeStringList(StringList* stringList){
-    for(int i = 0; i < stringList->length; i++){
-        free(get(stringList, i));
-    }
-
     free(stringList->list);
+    free(stringList);
 }
 
 void printStringList(StringList* stringList){
