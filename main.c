@@ -16,7 +16,7 @@ int isExecutableFile(const char* filePath){
     stat(filePath, &fileStat); // Get a stat struct for the current entry
 
     if(S_ISDIR(fileStat.st_mode) == 0){
-        if(fileStat.st_mode & S_IXUSR) { // If entry isn't a directory and user has execute permission
+        if(fileStat.st_mode & S_IXOTH) { // If entry isn't a directory and user has execute permission
             return TRUE;
         }
     }
@@ -33,18 +33,13 @@ void listExecutables(StringList* directories){
             struct dirent *dirEntry;
             int fileCounter = 0;
             while ((dirEntry = readdir(dir)) != NULL){
-                // Get Full FIle Path
+                // Get Full File Path
                 char filePath[256];
                 snprintf(filePath,256,"%s/%s", get(directories, i), dirEntry->d_name);
-                //strcat(filePath, get(directories, i));
-               // strcat(filePath, "/");
-                //strcat(filePath, dirEntry->d_name);
 
                 if(isExecutableFile(filePath)){
                     printf("%s\n", filePath);
                 }
-
-                free(filePath);
             }
         }
 
@@ -52,6 +47,15 @@ void listExecutables(StringList* directories){
     }
 }
 
+/*
+ * Function: main
+ * ------------------------
+ * Contains the main loop.
+ *
+ * @param argc - number of arguments the user enters
+ * @param 
+ * @return int of how the program exited.
+ */
 int main(int argc, char *argv[]) {
     // Create and Initialise a StringList to hold the directories
     StringList* directories = NULL;
