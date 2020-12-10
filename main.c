@@ -22,19 +22,36 @@ typedef struct WorkspaceStruct{
     char* directory;
 }Workspace;
 
+/*
+ * Function: isExecutableFile
+ * ------------------------
+ * This function checks whether the entry at a given file path is executable or not and is a file.
+ *
+ * @param filePath - string containing the full file path
+ * @return int of TRUE (1) if it is executable, and FALSE (0) if not
+ */
 int isExecutableFile(const char* filePath){
     // Access File's Attributes
     struct stat fileStat;
     stat(filePath, &fileStat); // Get a stat struct for the current entry
 
     if(S_ISDIR(fileStat.st_mode) == 0){
-        if(fileStat.st_mode & S_IXOTH) { // If entry isn't a directory and user has execute permission
+        if(fileStat.st_mode & S_IXUSR) { // If entry isn't a directory and user has execute permission
             return TRUE;
         }
     }
     return FALSE;
 }
 
+/*
+ * Function: listExecutables
+ * ------------------------
+ * This function is run by each worker thread. It loops through the entries in the given directory and checks if the
+ * entry is a file, and then whether it is executable. If this is the case, the full filepath is printed.
+ *
+ * @param ws - void pointer to the threads Workspace struct
+ * @return void pointer
+ */
 void* listExecutables(void *ws){
     Workspace *workspace = (Workspace*) ws;
 
@@ -60,8 +77,17 @@ void* listExecutables(void *ws){
     return NULL;
 }
 
-
+/*
+ * Function: listExecsFromDirectories
+ * ------------------------
+ * Takes a list of directories, and creates a new thread for each one. Each thread is tasked with displaying the
+ * executable files within its given directory
+ *
+ * @param list - Pointer to a string list struct containing directories paths
+ * @return int of how the program exited.
+ */
 void listExecsFromDirectories(StringList* list){
+    // Initialise arrays for the threads
     Workspace workspaces[list->length];
     pthread_t workerThreads[list->length];
 
@@ -75,7 +101,7 @@ void listExecsFromDirectories(StringList* list){
     }
 
     for(int i = 0; i < list->length; i++) {
-        pthread_join(workerThreads[i], NULL);
+        pthread_join(workerThreads[i], NULL); // Join each thread in order of creation
     }
 }
 
@@ -85,12 +111,11 @@ void listExecsFromDirectories(StringList* list){
  * Contains the main loop.
  *
  * @param argc - number of arguments the user enters
- * @param 
+ * @param argv - array of the directories that should be searched through, either seperated by spaces or colons
  * @return int of how the program exited.
  */
 int main(int argc, char *argv[]) {
     StringList* directories;
-
     // CREATING LIST OF DIRECTORIES FROM ARGUMENTS //
     if(argc == 1){ // No args = Use current working directory
         directories = initStringList();
