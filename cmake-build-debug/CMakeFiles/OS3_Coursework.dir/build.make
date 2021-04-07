@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\JamesBurling\Documents\GitHub\OS3-Coursework
+CMAKE_SOURCE_DIR = "C:\Users\JamesBurling\Documents 2\GitHub\OS3-Coursework"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\JamesBurling\Documents\GitHub\OS3-Coursework\cmake-build-debug
+CMAKE_BINARY_DIR = "C:\Users\JamesBurling\Documents 2\GitHub\OS3-Coursework\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles\OS3_Coursework.dir\depend.make
@@ -63,40 +63,40 @@ include CMakeFiles\OS3_Coursework.dir\flags.make
 
 CMakeFiles\OS3_Coursework.dir\main.c.obj: CMakeFiles\OS3_Coursework.dir\flags.make
 CMakeFiles\OS3_Coursework.dir\main.c.obj: ..\main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\JamesBurling\Documents\GitHub\OS3-Coursework\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/OS3_Coursework.dir/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\JamesBurling\Documents 2\GitHub\OS3-Coursework\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/OS3_Coursework.dir/main.c.obj"
 	C:\PROGRA~2\MIB055~1\2019\BUILDT~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\OS3_Coursework.dir\main.c.obj /FdCMakeFiles\OS3_Coursework.dir\ /FS -c C:\Users\JamesBurling\Documents\GitHub\OS3-Coursework\main.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\OS3_Coursework.dir\main.c.obj /FdCMakeFiles\OS3_Coursework.dir\ /FS -c "C:\Users\JamesBurling\Documents 2\GitHub\OS3-Coursework\main.c"
 <<
 
 CMakeFiles\OS3_Coursework.dir\main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/OS3_Coursework.dir/main.c.i"
 	C:\PROGRA~2\MIB055~1\2019\BUILDT~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\OS3_Coursework.dir\main.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\JamesBurling\Documents\GitHub\OS3-Coursework\main.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\JamesBurling\Documents 2\GitHub\OS3-Coursework\main.c"
 <<
 
 CMakeFiles\OS3_Coursework.dir\main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/OS3_Coursework.dir/main.c.s"
 	C:\PROGRA~2\MIB055~1\2019\BUILDT~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\OS3_Coursework.dir\main.c.s /c C:\Users\JamesBurling\Documents\GitHub\OS3-Coursework\main.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\OS3_Coursework.dir\main.c.s /c "C:\Users\JamesBurling\Documents 2\GitHub\OS3-Coursework\main.c"
 <<
 
 CMakeFiles\OS3_Coursework.dir\StringList\StringList.c.obj: CMakeFiles\OS3_Coursework.dir\flags.make
 CMakeFiles\OS3_Coursework.dir\StringList\StringList.c.obj: ..\StringList\StringList.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\JamesBurling\Documents\GitHub\OS3-Coursework\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/OS3_Coursework.dir/StringList/StringList.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\JamesBurling\Documents 2\GitHub\OS3-Coursework\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/OS3_Coursework.dir/StringList/StringList.c.obj"
 	C:\PROGRA~2\MIB055~1\2019\BUILDT~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\OS3_Coursework.dir\StringList\StringList.c.obj /FdCMakeFiles\OS3_Coursework.dir\ /FS -c C:\Users\JamesBurling\Documents\GitHub\OS3-Coursework\StringList\StringList.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\OS3_Coursework.dir\StringList\StringList.c.obj /FdCMakeFiles\OS3_Coursework.dir\ /FS -c "C:\Users\JamesBurling\Documents 2\GitHub\OS3-Coursework\StringList\StringList.c"
 <<
 
 CMakeFiles\OS3_Coursework.dir\StringList\StringList.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/OS3_Coursework.dir/StringList/StringList.c.i"
 	C:\PROGRA~2\MIB055~1\2019\BUILDT~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\OS3_Coursework.dir\StringList\StringList.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\JamesBurling\Documents\GitHub\OS3-Coursework\StringList\StringList.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\JamesBurling\Documents 2\GitHub\OS3-Coursework\StringList\StringList.c"
 <<
 
 CMakeFiles\OS3_Coursework.dir\StringList\StringList.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/OS3_Coursework.dir/StringList/StringList.c.s"
 	C:\PROGRA~2\MIB055~1\2019\BUILDT~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\OS3_Coursework.dir\StringList\StringList.c.s /c C:\Users\JamesBurling\Documents\GitHub\OS3-Coursework\StringList\StringList.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\OS3_Coursework.dir\StringList\StringList.c.s /c "C:\Users\JamesBurling\Documents 2\GitHub\OS3-Coursework\StringList\StringList.c"
 <<
 
 # Object files for target OS3_Coursework
@@ -111,9 +111,9 @@ OS3_Coursework.exe: CMakeFiles\OS3_Coursework.dir\main.c.obj
 OS3_Coursework.exe: CMakeFiles\OS3_Coursework.dir\StringList\StringList.c.obj
 OS3_Coursework.exe: CMakeFiles\OS3_Coursework.dir\build.make
 OS3_Coursework.exe: CMakeFiles\OS3_Coursework.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\JamesBurling\Documents\GitHub\OS3-Coursework\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable OS3_Coursework.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\JamesBurling\Documents 2\GitHub\OS3-Coursework\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable OS3_Coursework.exe"
 	"C:\Program Files\JetBrains\CLion 2020.2.1\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\OS3_Coursework.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MIB055~1\2019\BUILDT~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\OS3_Coursework.dir\objects1.rsp @<<
- /out:OS3_Coursework.exe /implib:OS3_Coursework.lib /pdb:C:\Users\JamesBurling\Documents\GitHub\OS3-Coursework\cmake-build-debug\OS3_Coursework.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+ /out:OS3_Coursework.exe /implib:OS3_Coursework.lib /pdb:"C:\Users\JamesBurling\Documents 2\GitHub\OS3-Coursework\cmake-build-debug\OS3_Coursework.pdb" /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
 
 # Rule to build all files generated by this target.
@@ -126,6 +126,6 @@ CMakeFiles\OS3_Coursework.dir\clean:
 .PHONY : CMakeFiles\OS3_Coursework.dir\clean
 
 CMakeFiles\OS3_Coursework.dir\depend:
-	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" C:\Users\JamesBurling\Documents\GitHub\OS3-Coursework C:\Users\JamesBurling\Documents\GitHub\OS3-Coursework C:\Users\JamesBurling\Documents\GitHub\OS3-Coursework\cmake-build-debug C:\Users\JamesBurling\Documents\GitHub\OS3-Coursework\cmake-build-debug C:\Users\JamesBurling\Documents\GitHub\OS3-Coursework\cmake-build-debug\CMakeFiles\OS3_Coursework.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" "C:\Users\JamesBurling\Documents 2\GitHub\OS3-Coursework" "C:\Users\JamesBurling\Documents 2\GitHub\OS3-Coursework" "C:\Users\JamesBurling\Documents 2\GitHub\OS3-Coursework\cmake-build-debug" "C:\Users\JamesBurling\Documents 2\GitHub\OS3-Coursework\cmake-build-debug" "C:\Users\JamesBurling\Documents 2\GitHub\OS3-Coursework\cmake-build-debug\CMakeFiles\OS3_Coursework.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles\OS3_Coursework.dir\depend
 

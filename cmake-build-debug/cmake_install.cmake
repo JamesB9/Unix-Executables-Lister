@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/JamesBurling/Documents/GitHub/OS3-Coursework
+# Install script for directory: C:/Users/JamesBurling/Documents 2/GitHub/OS3-Coursework
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/JamesBurling/Documents/GitHub/OS3-Coursework/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/JamesBurling/Documents 2/GitHub/OS3-Coursework/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

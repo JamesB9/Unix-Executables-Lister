@@ -1,5 +1,5 @@
 //
-// Created by JamesBurling on 27/11/2020.
+// Created by James on 27/11/2020.
 //
 
 #ifndef OS3_COURSEWORK_STRINGLIST_H
